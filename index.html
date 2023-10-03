@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="head.css" />
-    <link rel="stylesheet" href="foot.css" />
-    <link rel="stylesheet" href="welcome.css" />
-    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/head.css" />
+    <link rel="stylesheet" href="css/foot.css" />
+    <link rel="stylesheet" href="css/welcome.css" />
+    <link rel="stylesheet" href="css/breakingnews.css" />
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/aside.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
 
     <!-----------FONTS----------->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -32,39 +35,302 @@
         <header>
           <div id="header-container">
             <div class="lr-links">
-              <div><a href="">Nyheter</a></div>
-              <div><a href="">Sport</a></div>
+              <div><a class="links" href="kommersnart.html">Nyheter</a></div>
+              <div><a class="links" href="kommersnart.html">Sport</a></div>
             </div>
             <div id="header-logo-container">
-              <a id="header-logo" href="">SB</a>
+              <a id="header-logo" href="index.html">SkåneBladet</a>
             </div>
             <div class="lr-links">
-              <div><a href="">Väder</a></div>
-              <div><a href="">Kontakt</a></div>
+              <div><a class="links" href="kommersnart.html">Väder</a></div>
+              <div><a class="links" href="kommersnart.html">Kontakt</a></div>
             </div>
+            <div class="hamburger" id="hamburger">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </div>
+            <span id="hamburgerlist">
+              <ul>
+                <li><a href="kommersnart.html">Nyheter</a></li>
+                <li><a href="kommersnart.html">Sport</a></li>
+                <li><a href="kommersnart.html">Väder</a></li>
+                <li><a href="kommersnart.html">Kontakt</a></li>
+              </ul>
+            </span>
           </div>
         </header>
-
         <section id="welcome">
-          <div id="img-container"><img src="forest.jpg" alt="A picture of a forest" /></div>
+          <div id="img-container">
+            <img src="media/forest.jpg" alt="A picture of a forest"/>
+          </div>
           <div class="welcome-content" id="cont1">
             <p class="welcome-date">Mån, 25 sep 2023</p>
-            <p class="welcome-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente expedita adipisci laborum earum porro accusantium!</p>
+            <p class="welcome-text">
+              Skog och vatten i en oemotståndlig harmoni. Östra Göinge i nordöstra Skåne välkomnar alla som söker äventyr och upplevelser.
+            </p>
           </div>
-          <div class="welcome-content" id="cont2">content2</div>
-          <div class="welcome-content" id="cont3">content3</div>
+          <div class="welcome-content" id="cont2">
+            <p class="welcome-date">Mån, 25 sep 2023</p>
+            <p class="welcome-text">
+              På måndag inleds arbetet på den sista etappen av dubbelspåret mellan Ängelholm och Helsingborg. Det innebär att tågtrafiken mellan städerna kommer stå still fram till den tredje december då tågtrafiken åter släpps på.
+            </p>
+          </div>
+          <div class="welcome-content" id="cont3">
+            <p class="welcome-date">Mån, 25 sep 2023</p>
+            <p class="welcome-text">
+              Polis är på plats Tunavägen för att undersöka ett misstänkt farligt föremål i en lägenhet till ett flerfamiljshus.
+            </p>
+          </div>
         </section>
-
+        <section id="breakingnews">
+          <div id="breaking-menu">
+            <div id="left">
+              <div><h3>Senaste Nytt</h3></div>
+              <div><a href="kommersnart.html">Visa Alla</a></div>
+            </div>
+            <div id="right">
+              <div>
+                <a href="">
+                  <img src="media/arrow-left.svg" alt="Pil vänster">
+                </a>
+                <a href="">
+                  <img src="media/arrow-right.svg" alt="">
+                </a>
+              </div>
+            </div>
+          </div>
+          <div id="breaking-content">
+              <div class="breaking-img-container">
+                <h3>BRAND</h3>
+                <img src="media/fire.jpg" alt="An image of fire"></div>
+              <div class="breaking-img-container">
+                <h3>VACCIN</h3>
+                <img src="media/vaccin.jpg" alt="An image of a vacine"></div>
+              <div class="breaking-img-container">
+                <h3>OLYCKOR</h3>
+                <img src="media/Winter.jpg" alt="An image of winter"></div>
+        </section>
         <main>
-          <section>
-            <article>article 1</article>
-            <article>article 2</article>
-            <article>article 3</article>
+          <section id="first-main">
+            <div id="main-menu"><h2>Allmänt</h2></div>
+            <div id="main-content">
+              <article>
+                <div class="main-img-container">
+                  <div class="readmore">Läs Mer</div>
+                  <img src="media/bild1.jpg" alt="">
+                </div>
+                <div class="main-text-container">
+                  <p class="time">10:34 Tis</p>
+                  <p class="info">På tisdagsmorgonen var flera polispatruller på plats parkeringen på Stadiongatan, som spärrades av.</p>
+                </div>
+              </article>
+              <article>
+                <div class="main-img-container">
+                  <div class="readmore">Läs Mer</div>
+                  <img src="media/bild2.jpg" alt="">
+                </div>
+                <div class="main-text-container">
+                  <p class="time">15:12 Lör</p>
+                  <p class="info">Ett år går snabbt. Lördagen den 3 juni är det dags att fira Cykelns dag igen. Och precis som för...</p>
+                </div>
+              </article>
+              <article>
+                <div class="main-img-container">
+                  <div class="readmore">Läs Mer</div>
+                  <img src="media/bild3.jpg" alt="">
+                </div>
+                <div class="main-text-container">
+                  <p class="time">12:30 Mån</p>
+                  <p class="info">Vilka frågor engagerar unga svenska arkitekter och vilka strömningar dominerar samtiden? De...</p>
+                </div>
+              </article>
+              <article class="hide">
+                <div class="main-img-container">
+                  <div class="readmore">Läs Mer</div>
+                  <img src="media/bild4.jpg" alt="">
+                </div>
+                <div class="main-text-container">
+                  <p class="time">17:48 Sön</p>
+                  <p class="info">Hur ska du hinna ta dig runt bland Gallerihelgens 90 olika konstrum i helgen? Ska du satsa på...</p>
+                </div>
+              </article>
+              <article class="hide">
+                <div class="main-img-container">
+                  <div class="readmore">Läs Mer</div>
+                  <img src="media/bild5.jpg" alt="">
+                </div>
+                <div class="main-text-container">
+                  <p class="time">22:03 Fre</p>
+                  <p class="info">Allt fler misstänkta aktiviteter observeras i skånska hamnar sedan Rysslands storskaliga...</p>
+                </div>
+              </article>
+              <article class="hide">
+                <div class="main-img-container">
+                  <div class="readmore">Läs Mer</div>
+                  <img src="media/bild6.jpg" alt="">
+                </div>
+                <div class="main-text-container">
+                  <p class="time">09:08 Tis</p>
+                  <p class="info">Det skärs i en redan slimmad organisation. I grundskolan till exempel har det tagits bort..</p>
+                </div>
+              </article>
+            </div>
           </section>
         </main>
-        <aside>aside</aside>
-        <footer>footer</footer>
+        <aside>
+          <section id="aside-one">
+            <div id="aside-menu">
+              <span id="sport">Sport</span>
+              <span id="weather">Väder</span>
+            </div>
+            <div id="aside-content">
+              <div class="aside-card">
+                <div class="aside-card-container">
+                  <div class="aside-img-container">
+                    <img src="media/sport1.jpg" alt="">
+                  </div>
+                  <div class="aside-text-container">
+                    <span>26 sep 2023</span>
+                    <p>Resultatet avgörs av spelarnas prestationer på planen, visst – men se upp för hjärnornas kamp från sidlinjen. Där står två coacher som följt varandra under tränarkarriären och känner varandra utan och innan.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="aside-card">
+                <div class="aside-card-container">
+                  <div class="aside-img-container">
+                    <img src="media/sport2.jpg" alt="">
+                  </div>
+                  <div class="aside-text-container">
+                    <span>24 sep 2023</span>
+                    <p>Malmö FF mötte serieledarna IFK Göteborg på hemmaplan, de hade gått upp i delad serieledning vi</p>
+                  </div>
+                </div>
+              </div>
+              <div class="aside-card">
+                <div class="aside-card-container">
+                  <div class="aside-img-container">
+                    <img src="media/sport3.jpg" alt="">
+                  </div>
+                  <div class="aside-text-container">
+                    <span>30 maj 2023</span>
+                    <p>Föreställ dig att du är tränare för ett av Sveriges bästa handbollslag. Du har precis missat möjligheten att ta ledningen med 2-0 i en SM-finalserie där först till tre vinner.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="aside-card">
+                <div class="aside-card-container">
+                  <div class="aside-img-container">
+                    <img src="media/sport4.jpg" alt="">
+                  </div>
+                  <div class="aside-text-container">
+                    <span>7 sep 2021</span>
+                    <p>Lannem Stella har gjort sin sista start. Fjolårets kulldominant bland de treåriga kallblodsstona har inte blivit kvitt sina halsproblem och tas nu till avel</p>
+                  </div>
+                </div>
+              </div>
+              <div class="aside-card">
+                <div class="aside-card-container">
+                  <div class="aside-img-container">
+                    <img src="media/sport5.jpg" alt="">
+                  </div>
+                  <div class="aside-text-container">
+                    <span>28 sep 2023</span>
+                    <p>Ludvig Åberg är den hetaste spelaren i Ryder Cup. Uppståndelsen runt omkring honom påminner om ”Borgmania” i Wimbledon 1973.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="aside-card">
+                <div class="aside-card-container">
+                  <div class="aside-img-container">
+                    <img src="media/sport6.jpg" alt="">
+                  </div>
+                  <div class="aside-text-container">
+                    <span>10 jul 2023</span>
+                    <p>Presenteras i samarbete med Åhus Beachhandboll Festival. Åhus Beachhandboll Festival har bra fart på anmälningarna till årets turnering som</p>
+                  </div>
+              </div>
+            </div>
+            <div id="aside-bottom">
+              <a href="kommersnart.html">Visa Alla</a>
+            </div>
+          </section>
+          <section id="aside-two">
+            <div id="aside-two-wrapper">
+              <div id="aside-two-header"><h2>ANMÄLAN</h2></div>
+              <div><p>Håll dig uppdaterad och få de senaste nyheterna med vårt nyhetsbrev.</p></div>
+              <div id="aside-form">
+                <form action="">
+                  <input type="email" name="email" placeholder="Skriv din email">
+                  <a href="kommersnart.html">ANMÄL MIG</a>
+                </form>
+              </div>
+              <div id="aside-two-icons">
+                <a href="https://sv-se.facebook.com/"><img src="media/facebook.svg" alt=""></a>
+                <a href="https://www.youtube.com/"><img src="media/youtube.svg" alt=""></a>
+                <a href="https://www.instagram.com/"><img src="media/instagram.svg" alt=""></a>
+                <a href="https://se.linkedin.com/?original_referer=https%3A%2F%2Fwww.google.com%2F"><img src="media/linkedin.svg" alt=""></a>
+              </div>
+            </div>
+          </section>
+        </aside>
+        <footer>
+          <div id="footer-content">
+            <div id="footer-contact">
+              <h2>Missa Inga Nyheter</h2>
+              <span>Håll dig uppdaterad och få de senaste nyheterna med vårt nyhetsbrev.</span>
+              <form action="">
+                <input type="email" placeholder="Skriv din email">
+              </form>
+              <a id="footer-button" href="kommersnart.html">Anmäl Mig</a>
+              <div>
+                <a href="https://sv-se.facebook.com/"><img src="media/facebook.svg" alt=""></a>
+                <a href="https://www.youtube.com/"><img src="media/youtube.svg" alt=""></a>
+                <a href="https://www.instagram.com/"><img src="media/instagram.svg" alt=""></a>
+                <a href="https://se.linkedin.com/"><img src="media/linkedin.svg" alt=""></a>
+              </div>
+            </div>
+            <div id="footer-links-container">
+              <div class="footer-links">
+                <h2>Företaget</h2>
+                <ul>
+                  <li><a href="kommersnart.html">Om Oss</a></li>
+                  <li><a href="kommersnart.html">Sammarbeten</a></li>
+                </ul>
+              </div>
+              <div class="footer-links">
+                <h2>Kundtjänst</h2>
+                <ul>
+                  <li><a href="kommersnart.html">Kontakta Oss</a></li>
+                  <li><a href="kommersnart.html">Mina Sidor</a></li>
+                  <li><a href="kommersnart.html">Press</a></li>
+                </ul>
+              </div>
+              <div class="footer-links">
+                <h2>Utforska Mer</h2>
+                <ul>
+                  <li><a href="kommersnart.html">SVT</a></li>
+                  <li><a href="kommersnart.html">Kvällsposten</a></li>
+                  <li><a href="kommersnart.html">Aftonbladet</a></li>
+                  <li><a href="kommersnart.html">Norra Skåne</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div id="footer-terms">
+            <ul>
+              <li><a href="kommersnart.html">GDPR</a></li>
+              <li><a href="kommersnart.html">Användarvillkor</a></li>
+              <li><a href="kommersnart.html">Sekretess</a></li>
+              <li><a href="kommersnart.html">Tillgänglighetsfunktioner</a></li>
+            </ul>
+          </div>
+          <div id="footer-legals">
+            <span>© 2023 - 2024 SkåneBladet Company</span>
+          </div>
+        </footer>
       </div>
     </div>
+    <script src="script/script.js"></script>
   </body>
 </html>

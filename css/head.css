@@ -1,0 +1,101 @@
+header {
+    min-height: 90px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    z-index: 999;
+}
+#header-container {
+    width: 75%;
+    display: flex;
+    position: sticky;
+    justify-content: space-between;
+    height: 100%;
+}
+.lr-links {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.lr-links > div {
+    display: flex;
+    justify-content: center;
+    width: 70px;
+}
+#header-logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#header-container > div {
+    width: 25%;
+}
+header a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    
+}
+.links:hover {
+    font-size: 22px;
+}
+#header-logo {
+    font-family: 'Bacasime Antique', serif;
+    text-decoration: none;
+    color: white;
+    font-size: 65px;
+}
+#hamburger {
+    display: none;
+    cursor: pointer;
+}
+#hamburgerlist {
+    display: none;
+    width: 100%;
+    padding: 25px;
+}
+#hamburgerlist ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.bar {
+    display: block;
+    width: 30px;
+    height: 3px;
+    margin: 4px auto;
+    background-color: white;
+}
+@media (min-width: 800px) and (max-width: 900px) {
+    #header-container {
+        max-width: 81%;
+    }
+}
+@media (max-width: 900px) {
+    #hamburger {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .lr-links {
+        display: none;
+    }
+    #header-container {
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    #header-container > div {
+        width: auto;
+        margin: 0 25px;
+    }
+    #hamburgerlist.show {
+        display: flex;
+        margin-bottom: 1000px;
+    }
+}

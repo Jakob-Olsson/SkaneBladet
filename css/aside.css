@@ -1,0 +1,204 @@
+aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+}
+#aside-one {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#aside-menu {
+    width: 100%;
+    height: 30px;
+    height: auto;
+    display: flex;
+}
+#aside-menu span {
+    height: 46px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid rgb(234, 234, 234);
+}
+#aside-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    box-shadow: 0px 0px 34px -6px rgba(0,0,0,0.15);
+}
+.aside-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid rgb(234, 234, 234);
+    height: 100px;
+    width: 100%;
+    background-color: white;
+}
+.aside-card:hover p {
+    text-decoration: underline;
+}
+.aside-card:hover {
+    background-color: rgb(234, 234, 234);
+    cursor: pointer;
+}
+#aside-bottom {
+    background-color: white;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+#aside-bottom a {
+    color: rgb(222, 33, 33);
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 10px;
+
+}
+#aside-bottom a:hover {
+    text-decoration: underline;
+}
+#weather {
+    background-color: rgb(222, 215, 215);
+    color: rgb(103, 103, 103);
+    border-top: 3px solid rgb(222, 215, 215);
+    font-size: 20px;
+    font-weight: 700;
+}
+#weather:hover {
+    cursor: pointer;
+    color: rgb(222, 33, 33);
+}
+#sport {
+    background-color: white;
+    border-top: 3px solid rgb(222, 33, 33);
+    color: rgb(222, 33, 33);
+    font-size: 20px;
+    font-weight: 700;
+    z-index: 2;
+}
+.aside-img-container {
+    min-width: 90px;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.aside-img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.aside-text-container {
+    padding: 0 20px;
+}
+.aside-text-container p {
+    font-size: 0.9rem;
+    font-weight: 500;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.aside-text-container span {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: rgb(187, 187, 187);
+}
+.aside-card-container {
+    display: flex;
+    align-items: center;
+    height: 80%;
+    width: 90%;
+}
+#aside-two {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(222, 33, 33);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+#aside-two-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 90%;
+}
+#aside-two-header h2 {
+    color: white;
+    font-size: 1.4rem;
+}
+#aside-two p {
+    color: white;
+    text-align: center;
+    margin-bottom:1.5rem;
+}
+#aside-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+}
+#aside-form input {
+    width: 12rem;
+    height: 2rem;
+    border-radius: 1rem;
+    border: none;
+    padding: 0 1rem;
+    font-size: 1rem;
+}
+#aside-form input:hover {
+    box-shadow: 0px 0px 20px -6px rgb(154, 0, 0);
+}
+#aside-form a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 12rem;
+    height: 2rem;
+    border-radius: 1rem;
+    padding: 0 1rem;
+    background-color: rgb(30, 30, 30);
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+#aside-form a:hover {
+    box-shadow: 0px 0px 20px -6px rgb(154, 0, 0);
+    background-color: black;
+}
+#aside-two-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+    filter: invert(100%);
+}
+@media (max-width: 800px) {
+    #aside-form input {
+        width: 20rem;
+    }
+    #aside-form a {
+        width: 20rem;
+    }
+    #aside-two {
+        height: 20rem;
+    }
+}
